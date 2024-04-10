@@ -62,7 +62,6 @@ juanj@BOOK-CJCG9LS1GL ~ %
 * Output: Lists the contents of Desktop/lab1, showing the same Hello.java and README.md.
 * Explanation: ls lists the contents of the specified directory, in this case, Desktop/lab1.
 * Error: No Error
-```
 ## 3. ls with a file as an argument
 ```
 {
@@ -80,8 +79,10 @@ Error: No Error
 The cat command is used to display the contents of a file.
 ## 1. cat with no argument
 ```
+{
 juanj@BOOK-CJCG9LS1GL ~/Desktop/lab1 % cat
 ^Z
+}
 ```
 * Initial directory: /Users/juanj@BOOK-CJCG9LS1GL/Desktop/lab1
 * Output: Waits for input from the user.
@@ -89,8 +90,10 @@ juanj@BOOK-CJCG9LS1GL ~/Desktop/lab1 % cat
 * Error: No Error
 ## 2. cat with a directory as an argument
 ```
+{
 juanj@BOOK-CJCG9LS1GL ~/Desktop % cat lab1
 cat: lab1: Is a directory
+}
 ```
 * Initial directory: /Users/juanj@BOOK-CJCG9LS1GL/Desktop
 * Output: Error, as cat expects a file, not a directory.
@@ -98,6 +101,7 @@ cat: lab1: Is a directory
 * Error: Yes, because lab1 is a directory, not a file.
 ## 3. cat with a file as an argument
 ```
+{
 juanj@BOOK-CJCG9LS1GL ~/Desktop/lab1 % cat Hello.java
 public class Hello {
     public static void main(String[] args) {
@@ -105,6 +109,7 @@ public class Hello {
     }
 }
 juanj@BOOK-CJCG9LS1GL ~/Desktop/lab1 %
+}
 ```
 * Initial directory: /Users/josephwhiteman/Desktop/lab1
 * Output: Displays the contents of Hello.java.

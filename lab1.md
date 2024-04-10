@@ -1,6 +1,6 @@
 # Lab Report 1: Exploring Basic Filesystem Commands
 ## Introduction
-In this lab report, we will go over the fundamentals of exploring and modifying the filesystem using the command line. The emphasis is on three key commands: ‘cd’ to change directories, ‘ls’ to list directory contents, and ‘cat’ to display file contents. Using examples from a workspace produced during this lab, we’ll show each command with and without arguments, providing insights into its behavior and output.
+*In this lab report, we delve into the foundational aspects of navigating and manipulating the filesystem via the command line interface. Central to our exploration are three pivotal commands: 'cd' for directory navigation, 'ls' for directory listing, and 'cat' for file content display. By leveraging examples from our lab workspace, we aim to illustrate the functionality and outcomes of each command with and without arguments, offering comprehensive insights into their operation.*
 ## The cd Command
 ## 1. cd with no argument
 ```

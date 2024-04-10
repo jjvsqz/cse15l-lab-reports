@@ -9,7 +9,7 @@ juanj@BOOK-CJCG9LS1GL ~ % cd
 juanj@BOOK-CJCG9LS1GL ~ %
 }
 ```
-When using the cd command in the terminal, if executed without any arguments, it defaults to changing the directory to the user’s home directory. In this specific instance, the initial directory was set to /Users/juanj@BOOK-CJCG9LS1GL. Upon executing the cd command, there was no visible output, which is expected behavior as the command simply changes the working directory to the user’s home directory. Therefore, there were no errors encountered during the process.
+The initial directory is /Users/juanj@BOOK-CJCG9LS1GL. Upon execution, no visible output is produced; instead, the command changes the working directory to the user’s home directory. This behavior occurs because the cd command, when invoked without arguments, defaults to the user’s home directory. Consequently, there is no error associated with this operation.
 ## 2. cd with a directory as an argument
 ```
 {
@@ -55,7 +55,7 @@ Hello.java
 juanj@BOOK-CJCG9LS1GL-MBP-3 ~/Desktop/lab1 % 
 }
 ```
-The initial directory is set to /Users/juanj@BOOK-CJCG9LS1GL/Desktop/lab1. Executing the ls command with the argument Hello.java results in the output displaying the specified file, Hello.java. This outcome aligns with the expected behavior of the ls command when used with a file as an argument, as it verifies the existence of the file and displays its name. No errors were encountered during the execution of the command.
+The initial directory is /Users/juanj@BOOK-CJCG9LS1GL/Desktop/lab1. Executing the ls command with the argument Hello.java results in the output displaying the specified file, Hello.java. This outcome aligns with the expected behavior of the ls command when used with a file as an argument, as it verifies the existence of the file and displays its name. No errors were encountered during the execution of the command.
 ## The cat Command
 The cat command is used to display the contents of a file.
 ## 1. cat with no argument
@@ -73,7 +73,7 @@ juanj@BOOK-CJCG9LS1GL ~/Desktop % cat lab1
 cat: lab1: Is a directory
 }
 ```
-The initial directory set to /Users/juanj@BOOK-CJCG9LS1GL/Desktop, executing the cat command with the argument lab1 results in an error message. This error occurs because cat expects a file as its argument, not a directory. The attempt to use cat on a directory leads to an error because cat is specifically designed to display the contents of files, not directories. Therefore, the error message is generated as lab1 is identified as a directory, not a file.
+The initial directory is /Users/juanj@BOOK-CJCG9LS1GL/Desktop, executing the cat command with the argument lab1 results in an error message. This error occurs because cat expects a file as its argument, not a directory. The attempt to use cat on a directory leads to an error because cat is specifically designed to display the contents of files, not directories. Therefore, the error message is generated as lab1 is identified as a directory, not a file.
 ## 3. cat with a file as an argument
 ```
 {
@@ -86,4 +86,4 @@ public class Hello {
 juanj@BOOK-CJCG9LS1GL ~/Desktop/lab1 %
 }
 ```
-The initial directory set to /Users/juanj@BOOK-CJCG9LS1GL/Desktop/lab1, executing the cat command results in the output displaying the contents of the file Hello.java. This behavior aligns with the expected functionality of the cat command, which is designed to display the contents of specified files. No errors occurred during the execution of the command, as it successfully displayed the contents of the Hello.java file.
+The initial directory is /Users/juanj@BOOK-CJCG9LS1GL/Desktop/lab1, executing the cat command results in the output displaying the contents of the file Hello.java. This behavior aligns with the expected functionality of the cat command, which is designed to display the contents of specified files. No errors occurred during the execution of the command, as it successfully displayed the contents of the Hello.java file.

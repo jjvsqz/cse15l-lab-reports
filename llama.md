@@ -1,5 +1,7 @@
 *Italic*
+
 **Bold**	
+
 # Heading 1	
 ## Heading 2	
 [Link]([http://a.com](https://jjvsqz.github.io/cse15l-lab-reports/index.html)	

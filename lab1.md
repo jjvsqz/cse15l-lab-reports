@@ -70,11 +70,10 @@ Hello.java
 juanj@BOOK-CJCG9LS1GL-MBP-3 ~/Desktop/lab1 % 
 }
 ```
-Initial directory: /Users/juanj@BOOK-CJCG9LS1GL/Desktop/lab1
-Output: Displays the specified file.
-Explanation: When ls is used with a file as an argument, it simply verifies the existence of the file and displays its name.
-Error: No Error
-```
+* Initial directory: /Users/juanj@BOOK-CJCG9LS1GL/Desktop/lab1
+* Output: Displays the specified file.
+* Explanation: When ls is used with a file as an argument, it simply verifies the existence of the file and displays its name.
+* Error: No Error
 ## The cat Command
 The cat command is used to display the contents of a file.
 ## 1. cat with no argument
@@ -111,7 +110,7 @@ public class Hello {
 juanj@BOOK-CJCG9LS1GL ~/Desktop/lab1 %
 }
 ```
-* Initial directory: /Users/josephwhiteman/Desktop/lab1
+* Initial directory: /Users/juanj@BOOK-CJCG9LS1GL/Desktop/lab1
 * Output: Displays the contents of Hello.java.
 * Explanation: cat displays the contents of the specified file, in this case, the Hello.java file.
 * Error: No Error

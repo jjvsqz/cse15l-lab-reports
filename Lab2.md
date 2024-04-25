@@ -1,6 +1,5 @@
 # Lab Report 2
-## Header: *Juan Junior Vasquez_A17536681_CSE 15L
-Week #3: 04/15/2024 - 04/19/2024*
+## Header: *Juan Junior Vasquez_A17536681_CSE 15L Week #3: 04/15/2024 - 04/19/2024*
 ## The cd Command
 The cd command facilitates changing the current working directory within the filesystem hierarchy.
 ## 1. cd with no argument

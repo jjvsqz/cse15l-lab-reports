@@ -63,14 +63,18 @@ After I launched my ChatServer on port 4000, the first user, jpolitz, sent a gre
 + Method Called: My handleRequest(URI url) method in the Handler class got to work.
 + Arguments I Handled: I passed the handleRequest method a URI url with the value new URI("/add-message?s=Hello&user=jpolitz").
 + Changes in My Fields: My chatMessages string, initially an empty canvas, now captured “jpolitz: Hello\n”.
+  
 ![alt text](image.jpg)
+
 ##Interaction 2: yash’s Question
 Not long after, yash joined the chat, adding to the conversation:
 + URL Accessed: /add-message?s=How are you&user=yash
 + Method Called: Once more, handleRequest(URI url) in my Handler class was up for the task.
 + Arguments I Handled: The URI url was provided with new URI("/add-message?s=How are you&user=yash").
 + Changes in My Fields: My chatMessages string now included “jpolitz: Hello\nyash: How are you\n”.
+  
 ![alt text](image.jpg)
+
 In each of these exchanges, the handleRequest method diligently parses the incoming request’s URL, teases apart the user and message details, and meticulously updates the chatMessages field to reflect the ongoing conversation. This field acts as a living record, charting the ebb and flow of our server’s dialogues.
 ## Part 2: SSH Key Management and Remote Access
 ## Generating SSH Keys

@@ -1,8 +1,8 @@
 # Lab Report 2
 ## Header: *Juan Junior Vasquez_A17536681_CSE 15L Week #3: 04/15/2024 - 04/19/2024*
-## The cd Command
-The cd command facilitates changing the current working directory within the filesystem hierarchy.
-## 1. cd with no argument
+## Part 1: ChatServer Interactions
+Welcome to Lab Report 2, where we dive into the intricacies of our ChatServer’s interactions, tracking the flow of messages and observing the underlying mechanics of our Java server in action.
+## Code:
 ```
 {
 juanj@BOOK-CJCG9LS1GL ~ % cd

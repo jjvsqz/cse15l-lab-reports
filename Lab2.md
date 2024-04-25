@@ -1,7 +1,7 @@
 # Lab Report 2
 ## Header: *Juan Junior Vasquez_A17536681_CSE 15L Week #4: 04/22/2024 - 04/26/2024*
 ## Part 1: ChatServer Interactions
-Welcome to Lab Report 2, where we dive into the intricacies of our ChatServer’s interactions, tracking the flow of messages and observing the underlying mechanics of our Java server in action.
+In Lab Report 2, we delve deep into the complexities of our ChatServer's interactions, meticulously tracing the path of messages and examining the fundamental mechanics of our Java server in operation.
 ## Code:
 ```
 import java.io.IOException;
@@ -50,31 +50,31 @@ class ChatServer {
     }
 }
 ```
-I’m also using Server.java, which is provided in previous labs. After I run following code
+## End of Code
 
 ```
 PS C:\User\juanj ~/wavelet $ javac Server.java ChatServer.java
 PS C:\User\juanj ~/wavelet $ java ChatServer 4000
 Server Started!
 ```
-## Interaction 1: jpolitz’s Greeting
-After I launched my ChatServer on port 4000, the first user, jpolitz, sent a greeting:
-+ URL Accessed: /add-message?s=Hello&user=jpolitz
-+ Method Called: My handleRequest(URI url) method in the Handler class got to work.
-+ Arguments I Handled: I passed the handleRequest method a URI url with the value new URI("/add-message?s=Hello&user=jpolitz").
-+ Changes in My Fields: My chatMessages string, initially an empty canvas, now captured “jpolitz: Hello\n”.
+I utilized the Server.java file in the pervious step
 
-## Interaction 2: yash’s Question
-Not long after, yash joined the chat, adding to the conversation:
-+ URL Accessed: /add-message?s=How are you&user=yash
-+ Method Called: Once more, handleRequest(URI url) in my Handler class was up for the task.
-+ Arguments I Handled: The URI url was provided with new URI("/add-message?s=How are you&user=yash").
-+ Changes in My Fields: My chatMessages string now included “jpolitz: Hello\nyash: How are you\n”.
+## Interaction 1: The Greeting
+Upon launching my ChatServer on port 4000, the initial user, jpolitz, greeted:
++ Accessed URL: /add-message?s=Hello&user=jpolitz
++ Invoked Method: My handleRequest(URI url) method within the Handler class sprang into action.
++ Managed Arguments: I processed the handleRequest method with a URI url containing the value new URI("/add-message?s=Hello&user=jpolitz").
++ Field Updates: My chatMessages string, initially void, now encapsulated "jpolitz: Hello\n".
 
-In each of these exchanges, the handleRequest method diligently parses the incoming request’s URL, teases apart the user and message details, and meticulously updates the chatMessages field to reflect the ongoing conversation. This field acts as a living record, charting the ebb and flow of our server’s dialogues.
-## Part 2: SSH Key Management and Remote Access
-## Generating SSH Keys
-+ I started by opening a terminal on my system and running the ssh-keygen command to generate a new pair of SSH keys.During the process, I was prompted to specify the file location for the keys. I chose to save them in the default location (~/.ssh/id_rsa for the private key and ~/.ssh/id_rsa.pub for the public key).I decided to skip setting a passphrase for simplicity, though it’s an option for additional security.The command successfully created my identification and public key, displaying the key’s fingerprint and a randomart image for visual identification of the key.
+## Interaction 2: Question
+Shortly thereafter, yash joined the conversation, contributing with:
++ Accessed URL: /add-message?s=How are you&user=yash
++ Invoked Method: handleRequest(URI url) in the Handler class responded.
++ Field Updates: chatMessages now included "jpolitz: Hello\nyash: How are you\n".
+Throughout each of these interactions, the handleRequest method diligently dissects the incoming request's URL, separates the user and message particulars, and methodically adjusts the chatMessages field to mirror the evolving conversation. This field serves as a dynamic archive, documenting the rhythm of our server's dialogues.
+
+## Part 2: Generating SSH Keys and Remote Access
++ I began by initiating a terminal session on my system and executing the ssh-keygen command to produce a fresh set of SSH keys. Throughout the procedure, I was prompted to designate the file location for these keys. Opting for convenience, I elected to store them in the default directory (~/.ssh/id_rsa for the private key and ~/.ssh/id_rsa.pub for the public key). In the interest of simplicity, I chose to forgo setting a passphrase, although it remains an option for heightened security. The command completed successfully, generating my identification and public key, along with displaying the key's fingerprint and a randomart image for visual verification.
 ```
 PS C:\User\juanj> ssh-keygen
 Generating public/private rsa key pair.
@@ -100,8 +100,8 @@ The key's randomart image is:
 |   o=..   o..    |
 +----[SHA256]-----+
 ```
-## Locating the SSH Keys
-+ Next, I wanted to confirm the existence and location of my newly generated SSH keys.I used the ls -l ~/.ssh/id_rsa command to display details about my private key, confirming its presence in my .ssh directory. I also ran ls -l ~/.ssh/ to list all files in my .ssh directory, where I found the id_rsa (private key), id_rsa.pub (public key), and the known_hosts file. Blthej
+## Locating
++ Following that, I sought to verify the presence and location of my freshly generated SSH keys. Utilizing the ls -l ~/.ssh/id_rsa command, I accessed details regarding my private key, affirming its existence within my .ssh directory. Additionally, I executed ls -l ~/.ssh/ to enumerate all files in my .ssh directory, identifying the id_rsa (private key), id_rsa.pub (public key), and the known_hosts file.
 
 ```
 PS C:\User\juanj> ls -l ~/.ssh/id_rsa
@@ -116,8 +116,8 @@ total 40
 PS C:\User\juanj>
 ```
 
-## Copying Public Key to Remote Server
-+ With my public key ready, I used the scp command to securely copy it to the authorized_keys file on the remote server (ieng6 in this case).After entering my password, the public key was successfully transferred to the remote server’s ~/.ssh/authorized_keys file.
+## Copying to Remote Server
++ With my public key, I employed the scp command to securely transfer it to the authorized_keys file on the remote server (ieng6 in this instance). Following password authentication, the public key was effectively conveyed to the ~/.ssh/authorized_keys file on the remote server.
 
 ```
 PS C:\User\juanj> ssh-copy-id -i ~/.ssh/id_rsa.pub jjv001@ieng6.ucsd.edu 
@@ -133,7 +133,7 @@ and check to make sure that only the key(s) you wanted were added.
 ```
 
 ## SSH into Remote Server Without a Password
-+ Finally, I tested SSH access to the ieng6 server using my newly set up SSH keys.I ran ssh 'jwhiteman@ieng6.ucsd.edu' and was able to log in without being prompted for a password, thanks to the SSH key authentication.Upon logging in, I was greeted with the server’s welcome message and some system status information.
++ In the final step, I verified SSH access to the ieng6 server using my freshly configured SSH keys. Executing ssh 'jjv001@ieng6.ucsd.edu', I successfully logged in without encountering a password prompt, owing to SSH key authentication. Upon access, I was welcomed with the server's message and provided with system status updates.
 
 ```
 PS C:\User\juanj> ssh 'jjv001@ieng6.ucsd.edu'
@@ -144,9 +144,9 @@ You are using 0% CPU on this system
 
 Cluster Status 
 Hostname     Time    #Users  Load  Averages  
-ieng6-201   17:10:01   21  0.10,  0.32,  0.41
-ieng6-202   17:10:01   21  1.99,  1.76,  1.24
-ieng6-203   17:10:01   20  0.98,  1.21,  1.47
+ieng6-201   15:35:21   9  0.89,  0.90,  0.69
+ieng6-202   15:35:21   13  1.99,  1.76,  1.24
+ieng6-203   15:35:21   17  5.07,  5.21,  5.49
 
  
 
@@ -155,8 +155,8 @@ at the command prompt.  (For example, "cs15lsp24", without the quotes).
 
 To see all available software packages, type "prep -l" at the command prompt,
 or "prep -h" for more options.
-[jjv001@ieng6-201]:~:57$
+[jjv001@ieng6-201]:~:94$
 ```
 
 ## Part 3: Learning Outcomes from Recent Labs
-In these past labs, I learnt how to set up and maintain a Java-based chat server on a remote server. This includes an understanding of how many users can talk with the server at the same time. I also had practical experience using SSH keys for secure and convenient remote server access, eliminating the need for password authentication. This knowledge is useful for effectively and securely administering remote servers and applications.
+Throughout previous labs, I acquired the skills to establish and oversee a Java-based chat server on a remote system. This encompassed grasping the server's capacity to facilitate concurrent user interactions. Additionally, I gained hands-on familiarity with SSH keys, enabling secure and seamless remote server access while bypassing password authentication. Such proficiency proves invaluable in proficiently and securely managing remote servers and applications.

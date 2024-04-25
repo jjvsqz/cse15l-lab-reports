@@ -53,8 +53,8 @@ class ChatServer {
 I’m also using Server.java, which is provided in previous labs. After I run following code
 
 ```
-josephwhiteman@Josephs-MacBook-Pro-3 ~/wavelet $ javac Server.java ChatServer.java
-josephwhiteman@Josephs-MacBook-Pro-3 ~/wavelet $ java ChatServer 4000
+PS C:\User\juanj ~/wavelet $ javac Server.java ChatServer.java
+PS C:\User\juanj ~/wavelet $ java ChatServer 4000
 Server Started!
 ```
 ## Interaction 1: jpolitz’s Greeting
@@ -80,17 +80,17 @@ In each of these exchanges, the handleRequest method diligently parses the incom
 ## Generating SSH Keys
 + I started by opening a terminal on my system and running the ssh-keygen command to generate a new pair of SSH keys.During the process, I was prompted to specify the file location for the keys. I chose to save them in the default location (~/.ssh/id_rsa for the private key and ~/.ssh/id_rsa.pub for the public key).I decided to skip setting a passphrase for simplicity, though it’s an option for additional security.The command successfully created my identification and public key, displaying the key’s fingerprint and a randomart image for visual identification of the key.
 ```
-josephwhiteman@Josephs-MacBook-Pro-3 ~ % ssh-keygen
+PS C:\User\juanj> ssh-keygen
 Generating public/private rsa key pair.
-Enter file in which to save the key (/Users/josephwhiteman/.ssh/id_rsa): 
-/Users/josephwhiteman/.ssh/id_rsa already exists.
+Enter file in which to save the key (/Users/juanj/.ssh/id_rsa): 
+/Users/juanj/.ssh/id_rsa already exists.
 Overwrite (y/n)? y
 Enter passphrase (empty for no passphrase): 
 Enter same passphrase again: 
-Your identification has been saved in /Users/josephwhiteman/.ssh/id_rsa
-Your public key has been saved in /Users/josephwhiteman/.ssh/id_rsa.pub
+Your identification has been saved in /Users/juanj/.ssh/id_rsa
+Your public key has been saved in /Users/juanj/.ssh/id_rsa.pub
 The key fingerprint is:
-SHA256:tvEJok+65pRLRTBMf4YAwBHtED01Xp1EpObK0PHfayM josephwhiteman@Josephs-MacBook-Pro-3.local
+SHA256:0mP7NzXpV+AVzatXYcAO+pIRINCp9gdmcK8RfihDWE juanj@BOOK-CJCG9LS1GL
 The key's randomart image is:
 +---[RSA 3072]----+
 |o=B+*o .=+.      |

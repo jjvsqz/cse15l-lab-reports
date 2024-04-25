@@ -66,7 +66,7 @@ After I launched my ChatServer on port 4000, the first user, jpolitz, sent a gre
   
 ![alt text](image.jpg)
 
-##Interaction 2: yash’s Question
+## Interaction 2: yash’s Question
 Not long after, yash joined the chat, adding to the conversation:
 + URL Accessed: /add-message?s=How are you&user=yash
 + Method Called: Once more, handleRequest(URI url) in my Handler class was up for the task.

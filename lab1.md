@@ -9,7 +9,7 @@ juanj@BOOK-CJCG9LS1GL ~ % cd
 juanj@BOOK-CJCG9LS1GL ~ %
 }
 ```
-The initial directory is /Users/juanj@BOOK-CJCG9LS1GL. Upon execution, no visible output is produced; instead, the command changes the working directory to the user’s home directory. This behavior occurs because the cd command, when invoked without arguments, defaults to the user’s home directory. Consequently, there is no error associated with this operation.
+The initial directory is ```/Users/juanj@BOOK-CJCG9LS1GL```. Upon execution, no visible output is produced; instead, the command changes the working directory to the user’s home directory. This behavior occurs because the cd command, when invoked without arguments, defaults to the user’s home directory. Consequently, there is no error associated with this operation.
 ## 2. cd with a directory as an argument
 ```
 {

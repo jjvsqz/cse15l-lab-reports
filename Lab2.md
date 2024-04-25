@@ -102,6 +102,7 @@ The key's randomart image is:
 ```
 ## Locating the SSH Keys
 + Next, I wanted to confirm the existence and location of my newly generated SSH keys.I used the ls -l ~/.ssh/id_rsa command to display details about my private key, confirming its presence in my .ssh directory. I also ran ls -l ~/.ssh/ to list all files in my .ssh directory, where I found the id_rsa (private key), id_rsa.pub (public key), and the known_hosts file. Blthej
+
 ```
 PS C:\User\juanj> ls -l ~/.ssh/id_rsa
 -rw-------  1 juanj  staff  2635 Apr 24 17:00 /Users/juanj/.ssh/id_rsa
@@ -114,8 +115,10 @@ total 40
 -rw-r--r--  1 juanj  staff    96 Apr  9 15:26 known_hosts.old
 PS C:\User\juanj>
 ```
+
 ## Copying Public Key to Remote Server
 + With my public key ready, I used the scp command to securely copy it to the authorized_keys file on the remote server (ieng6 in this case).After entering my password, the public key was successfully transferred to the remote server’s ~/.ssh/authorized_keys file.
+
 ```
 PS C:\User\juanj> ssh-copy-id -i ~/.ssh/id_rsa.pub jjv001@ieng6.ucsd.edu 
 /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/juanj/.ssh/id_rsa.pub"
@@ -128,8 +131,10 @@ Number of key(s) added:        1
 Now try logging into the machine, with:   "ssh 'jjv001@ieng6.ucsd.edu'"
 and check to make sure that only the key(s) you wanted were added.
 ```
+
 ## SSH into Remote Server Without a Password
 + Finally, I tested SSH access to the ieng6 server using my newly set up SSH keys.I ran ssh 'jwhiteman@ieng6.ucsd.edu' and was able to log in without being prompted for a password, thanks to the SSH key authentication.Upon logging in, I was greeted with the server’s welcome message and some system status information.
+
 ```
 PS C:\User\juanj> ssh 'jjv001@ieng6.ucsd.edu'
 Last login: Tue May 23 19:48:27 2024 from 076-033-215-103.inf.spectrum.com
@@ -152,5 +157,6 @@ To see all available software packages, type "prep -l" at the command prompt,
 or "prep -h" for more options.
 [jjv001@ieng6-201]:~:57$
 ```
+
 ## Part 3: Learning Outcomes from Recent Labs
 In these past labs, I learnt how to set up and maintain a Java-based chat server on a remote server. This includes an understanding of how many users can talk with the server at the same time. I also had practical experience using SSH keys for secure and convenient remote server access, eliminating the need for password authentication. This knowledge is useful for effectively and securely administering remote servers and applications.

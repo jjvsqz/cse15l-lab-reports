@@ -62,20 +62,14 @@ I utilized the Server.java file in the pervious step
 
 ## Interaction 1: The Greeting
 Upon launching my ChatServer on port 4000, the initial user, jpolitz, greeted:
-+ Accessed URL: /add-message?s=Hello&user=jpolitz
-+ Invoked Method: My handleRequest(URI url) method within the Handler class sprang into action.
-+ Managed Arguments: I processed the handleRequest method with a URI url containing the value new URI("/add-message?s=Hello&user=jpolitz").
-+ Field Updates: My chatMessages string, initially void, now encapsulated "jpolitz: Hello\n".
+Upon accessing the URL ```"/add-message?s=Hello&user=jpolitz"```, the system triggered the execution of the ```handleRequest(URI url)``` method within the ```Handler``` class. This method was invoked with the argument of a URI url, specifically new URI```("/add-message?s=Hello&user=jpolitz")```. Subsequently, within this method, I managed the processing of the provided URI, resulting in an update to the chatMessages field. Initially void, the chatMessages string now encapsulates the message ```"jpolitz: Hello\n"```.
 
 ## Interaction 2: Question
 Shortly thereafter, yash joined the conversation, contributing with:
-+ Accessed URL: /add-message?s=How are you&user=yash
-+ Invoked Method: handleRequest(URI url) in the Handler class responded.
-+ Field Updates: chatMessages now included "jpolitz: Hello\nyash: How are you\n".
-Throughout each of these interactions, the handleRequest method diligently dissects the incoming request's URL, separates the user and message particulars, and methodically adjusts the chatMessages field to mirror the evolving conversation. This field serves as a dynamic archive, documenting the rhythm of our server's dialogues.
+Upon accessing the URL ```"/add-message?s=Hello&user=jpolitz"```, the system activated my handleRequest(URI url) method within the ```Handler``` class. I handled the method with a URI url parameter, instantiated as new URI```("/add-message?s=Hello&user=jpolitz")```. This processing resulted in an update to the ```chatMessages``` string, which was initially empty but now contains the message "jpolitz: Hello\n".
 
 ## Part 2: Generating SSH Keys and Remote Access
-+ I began by initiating a terminal session on my system and executing the ssh-keygen command to produce a fresh set of SSH keys. Throughout the procedure, I was prompted to designate the file location for these keys. Opting for convenience, I elected to store them in the default directory (~/.ssh/id_rsa for the private key and ~/.ssh/id_rsa.pub for the public key). In the interest of simplicity, I chose to forgo setting a passphrase, although it remains an option for heightened security. The command completed successfully, generating my identification and public key, along with displaying the key's fingerprint and a randomart image for visual verification.
+I began by initiating a terminal session on my system and executing the ssh-keygen command to produce a fresh set of SSH keys. Throughout the procedure, I was prompted to designate the file location for these keys. Opting for convenience, I elected to store them in the default directory (```~/.ssh/id_rsa``` for the private key and ```~/.ssh/id_rsa.pub``` for the public key). In the interest of simplicity, I chose to forgo setting a passphrase, although it remains an option for heightened security. The command completed successfully, generating my identification and public key, along with displaying the key's fingerprint and a randomart image for visual verification.
 ```
 PS C:\User\juanj> ssh-keygen
 Generating public/private rsa key pair.
@@ -102,7 +96,7 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 ## Locating
-+ Following that, I sought to verify the presence and location of my freshly generated SSH keys. Utilizing the ls -l ~/.ssh/id_rsa command, I accessed details regarding my private key, affirming its existence within my .ssh directory. Additionally, I executed ls -l ~/.ssh/ to enumerate all files in my .ssh directory, identifying the id_rsa (private key), id_rsa.pub (public key), and the known_hosts file.
+Following that, I sought to verify the presence and location of my freshly generated SSH keys. Utilizing the ```ls -l ~/.ssh/id_rsa``` command, I accessed details regarding my private key, affirming its existence within my ```.ssh``` directory. Additionally, I executed ```ls -l ~/.ssh/``` to enumerate all files in my ```.ssh``` directory, identifying the ```id_rsa``` (private key), ```id_rsa.pub``` (public key), and the ```known_hosts``` file.
 
 ```
 PS C:\User\juanj> ls -l ~/.ssh/id_rsa
@@ -118,7 +112,7 @@ PS C:\User\juanj>
 ```
 
 ## Copying to Remote Server
-+ With my public key, I employed the scp command to securely transfer it to the authorized_keys file on the remote server (ieng6 in this instance). Following password authentication, the public key was effectively conveyed to the ~/.ssh/authorized_keys file on the remote server.
+With my public key, I employed the ```scp``` command to securely transfer it to the authorized_keys file on the remote server (ieng6 in this instance). Following password authentication, the public key was effectively conveyed to the ```~/.ssh/authorized_keys``` file on the remote server.
 
 ```
 PS C:\User\juanj> ssh-copy-id -i ~/.ssh/id_rsa.pub jjv001@ieng6.ucsd.edu 
@@ -134,7 +128,7 @@ and check to make sure that only the key(s) you wanted were added.
 ```
 
 ## SSH into Remote Server Without a Password
-+ In the final step, I verified SSH access to the ieng6 server using my freshly configured SSH keys. Executing ssh 'jjv001@ieng6.ucsd.edu', I successfully logged in without encountering a password prompt, owing to SSH key authentication. Upon access, I was welcomed with the server's message and provided with system status updates.
+In the final step, I verified SSH access to the ieng6 server using my freshly configured SSH keys. Executing ssh ```'jjv001@ieng6.ucsd.edu'```, I successfully logged in without encountering a password prompt, owing to SSH key authentication. Upon access, I was welcomed with the server's message and provided with system status updates.
 
 ```
 PS C:\User\juanj> ssh 'jjv001@ieng6.ucsd.edu'

@@ -1,5 +1,6 @@
 # Lab Report 2
-## Header: *Juan Junior Vasquez_A17536681_CSE 15L Week #4: 04/22/2024 - 04/26/2024*
+## Header: *Juan Junior Vasquez_A17536681_CSE 15L* 
+## Week #4: *04/22/2024 - 04/26/2024*
 ## Part 1: ChatServer Interactions
 In Lab Report 2, we delve deep into the complexities of our ChatServer's interactions, meticulously tracing the path of messages and examining the fundamental mechanics of our Java server in operation.
 ## Code:

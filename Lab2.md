@@ -64,6 +64,7 @@ Upon accessing the URL ```"/add-message?s=Hello&user=jpolitz"```, the system tri
 
 ## Interaction 2: Question
 ![image](https://github.com/jjvsqz/cse15l-lab-reports/assets/142750464/bfbee6a5-d855-4170-a050-1c40ae6ba712)
+
 Shortly thereafter, yash joined the conversation, contributing with:
 Upon accessing the URL ```"/add-message?s=Hello&user=jpolitz"```, the system activated my handleRequest(URI url) method within the ```Handler``` class. I handled the method with a URI url parameter, instantiated as new URI```("/add-message?s=Hello&user=jpolitz")```. This processing resulted in an update to the ```chatMessages``` string, which was initially empty but now contains the message "jpolitz: Hello\n".
 

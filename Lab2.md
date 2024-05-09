@@ -49,8 +49,6 @@ class ChatServer {
     }
 }
 ```
-## End of Code
-
 ```
 PS C:\User\juanj ~/wavelet $ javac Server.java ChatServer.java
 PS C:\User\juanj ~/wavelet $ java ChatServer 4000

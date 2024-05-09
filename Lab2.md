@@ -59,10 +59,13 @@ Server Started!
 I utilized the Server.java file in the pervious step
 
 ## Interaction 1: The Greeting
+![image](https://github.com/jjvsqz/cse15l-lab-reports/assets/142750464/5dcc2a6c-bd02-483c-beac-c4742d280943)
+
 Upon launching my ChatServer on port 4000, the initial user, jpolitz, greeted:
 Upon accessing the URL ```"/add-message?s=Hello&user=jpolitz"```, the system triggered the execution of the ```handleRequest(URI url)``` method within the ```Handler``` class. This method was invoked with the argument of a URI url, specifically new URI```("/add-message?s=Hello&user=jpolitz")```. Subsequently, within this method, I managed the processing of the provided URI, resulting in an update to the chatMessages field. Initially void, the chatMessages string now encapsulates the message ```"jpolitz: Hello\n"```.
 
 ## Interaction 2: Question
+![image](https://github.com/jjvsqz/cse15l-lab-reports/assets/142750464/bfbee6a5-d855-4170-a050-1c40ae6ba712)
 Shortly thereafter, yash joined the conversation, contributing with:
 Upon accessing the URL ```"/add-message?s=Hello&user=jpolitz"```, the system activated my handleRequest(URI url) method within the ```Handler``` class. I handled the method with a URI url parameter, instantiated as new URI```("/add-message?s=Hello&user=jpolitz")```. This processing resulted in an update to the ```chatMessages``` string, which was initially empty but now contains the message "jpolitz: Hello\n".
 

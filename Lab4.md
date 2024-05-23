@@ -1,4 +1,4 @@
-# # Lab Report 4
+# Lab Report 4
 ## Mastering SSH, Vim, and Java Development Workflow
 Throughout this lab, I utilized SSH for remote server access, edited files with Vim, and performed Java code compilation and testing. Detailed below is each step taken with the specific keys pressed to achieve the desired outcomes.
 ## Step 4: SSH into ieng6

@@ -13,6 +13,8 @@ Pressed: s s h Space j j v 0 0 1 @ i e n g 6 . u c s d . e d u <Enter>
 
 ## Step 5: Clone the GitHub Repository
 After successfully logging into the ieng6 server, you’ll clone the repository. This clones your fork of the lab7 repository to the ieng6 server. You’re using the SSH protocol for cloning, which is secure and doesn’t require you to enter your GitHub password thanks to the SSH key you’ve added to your GitHub account.
+![image](![image](https://github.com/jjvsqz/cse15l-lab-reports/assets/142750464/7fe855eb-6802-4eef-a5b1-f432884aba4d)
+This command securely connected me to the ieng6-202 server where I could begin my work.
 
 ## Step 6: Compile Java Tests and Run Java Tests
 Once the repository is cloned, you need to change into the new directory that was created.

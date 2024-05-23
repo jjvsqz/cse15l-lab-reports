@@ -29,7 +29,7 @@ Compiling the Java files was necessary to ensure everything was in order before 
 java -cp .:"lib/*" org.junit.runner.JUnitCore ListExamplesTests
 Pressed: j a v a Space - c p Space . : " l i b / * " Space o r g . j u n i t . r u n n e r . J U n i t C o r e Space L i s t E x a m p l e s T e s t s <Enter>
 ```
-Run the test cases in ListExamplesTests. This step is crucial for identifying any failing tests that you'll need to fix. After running the tests, one test failed as expected. This confirmed the presence of an issue that I would address next.
+Run the test cases in ListExamplesTests. This step is crucial for identifying any failing tests that you'll need to fix. After running the tests, one test failed as expected, confirming the presence of an issue.
 
 ## Step 8: Edit Code with Vim and Run Fixed Java File Again
 I used Vim to open the file that required changes.
